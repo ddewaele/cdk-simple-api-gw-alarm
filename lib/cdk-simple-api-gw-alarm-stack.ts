@@ -20,7 +20,7 @@ export class CdkSimpleApiGwAlarmStack extends cdk.Stack {
 
 
     // Define the API Gateway
-    const httpApi = new apigatewayv2.HttpApi(this, 'NestJsHttpApi');
+    const httpApi = new apigatewayv2.HttpApi(this, 'MyHttpApi');
 
     httpApi.addRoutes({
       path: '/api1/{proxy+}',
